@@ -1,10 +1,10 @@
 package com.cx.damai.service.impl;
 
-import com.cx.damai.po.DmCart;
-import com.cx.damai.mapper.DmCartMapper;
-import com.cx.damai.service.DmCartService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import lombok.extern.slf4j.Slf4j;
+
+import com.cx.damai.entity.DmCart;
+import com.cx.damai.mapper.DmCartMapper;
+import com.cx.damai.service.IDmCartService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,10 +12,10 @@ import org.springframework.stereotype.Service;
  * 大麦商城-购物车-2 服务实现类
  * </p>
  *
- * @author cx
+ * @author 廖老师
+ * @since 2024-05-15
  */
-@Slf4j
 @Service
-public class DmCartServiceImpl extends ServiceImpl<DmCartMapper, DmCart> implements DmCartService {
+public class DmCartServiceImpl extends ServiceImpl<DmCartMapper, DmCart> implements IDmCartService {
 
 }

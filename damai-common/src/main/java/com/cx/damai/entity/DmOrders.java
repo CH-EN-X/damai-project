@@ -1,21 +1,25 @@
-package com.cx.damai.po;
+package com.cx.damai.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.time.LocalDateTime;
-import java.io.Serializable;
-import lombok.Data;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+
+import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * <p>
  * 大麦商城-订单表-73
  * </p>
  *
- * @author cx
+ * @author 廖老师
+ * @since 2024-05-15
  */
-@Data
 @TableName("dm_orders")
+@Data
 public class DmOrders implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -51,5 +55,7 @@ public class DmOrders implements Serializable {
      */
     private Integer aid;
 
+    @TableField(exist = false)
+    private List<DmOrderitem> items;
 
 }

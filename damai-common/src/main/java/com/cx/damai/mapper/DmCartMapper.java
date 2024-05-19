@@ -1,15 +1,15 @@
 package com.cx.damai.mapper;
 
-import com.cx.damai.po.DmCart;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.springframework.stereotype.Repository;
+import com.cx.damai.entity.DmCart;
 
 /**
  * <p>
  * 大麦商城-购物车-2 Mapper 接口
  * </p>
  *
- * @author cx
+ * @author 廖老师
+ * @since 2024-05-15
  */
 public interface DmCartMapper extends BaseMapper<DmCart> {
 

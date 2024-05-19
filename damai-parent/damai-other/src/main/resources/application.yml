@@ -1,17 +1,17 @@
-server:
-  port: 8071
-spring:
-  application:
-    name: other-service
-  datasource:
-    url: jdbc:mysql://localhost:3308/damai?serverTimezone=UTC&userUnicode=true&useSSL=false&
-    username: root
-    password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
+#server:
+#  port: 8071
+#spring:
+#  application:
+#    name: damai-other
+#  datasource:
+#    url: jdbc:mysql://localhost:3308/damai?serverTimezone=UTC&userUnicode=true&useSSL=false&
+#    username: root
+#    password: 123456
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
 #    gateway:
 #      routes: # 网关路由配置
 #        - id: user-service # 路由id，自定义，只要唯一即可

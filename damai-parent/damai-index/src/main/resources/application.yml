@@ -1,9 +1,9 @@
-spring:
-  application:
-    name: index-service
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
-server:
-  port: 8072
+#spring:
+#  application:
+#    name: index-service
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
+#server:
+#  port: 80
