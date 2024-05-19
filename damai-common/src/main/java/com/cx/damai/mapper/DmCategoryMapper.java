@@ -1,8 +1,7 @@
 package com.cx.damai.mapper;
 
-import com.cx.damai.po.DmCategory;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.springframework.stereotype.Repository;
+import com.cx.damai.po.DmCategory;
 
 /**
  * <p>

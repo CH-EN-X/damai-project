@@ -6,7 +6,6 @@ import com.cx.damai.service.DmUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * <p>
@@ -20,6 +19,5 @@ import org.springframework.beans.factory.annotation.Autowired;
 @RequestMapping("dmUser")
 public class DmUserController {
 
-    @Autowired
-    private DmUserService  dmUserService;
+
 }

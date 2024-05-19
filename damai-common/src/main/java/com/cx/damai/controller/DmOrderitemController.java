@@ -6,7 +6,6 @@ import com.cx.damai.service.DmOrderitemService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * <p>
@@ -20,6 +19,5 @@ import org.springframework.beans.factory.annotation.Autowired;
 @RequestMapping("dmOrderitem")
 public class DmOrderitemController {
 
-    @Autowired
-    private DmOrderitemService  dmOrderitemService;
+
 }
