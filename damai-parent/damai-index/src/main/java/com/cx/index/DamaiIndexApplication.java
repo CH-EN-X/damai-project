@@ -1,14 +1,19 @@
 package com.cx.index;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcRegistrations;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import javax.annotation.ManagedBean;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.cx.index.web"})
+@EnableFeignClients
+@MapperScan("com.cx.damai.mapper")
 public class DamaiIndexApplication implements WebMvcConfigurer {
 
     public static void main(String[] args) {

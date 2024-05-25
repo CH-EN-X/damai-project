@@ -1,10 +1,11 @@
 
-#spring:
-#  application:
+spring:
+  application:
 #    name: user-service
-#  cloud:
-#    nacos:
-#      discovery:
-#        server-addr: localhost:8848
+    name: damai-user # 服务名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
 #server:
 #  port: 8074

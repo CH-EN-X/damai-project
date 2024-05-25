@@ -320,14 +320,14 @@
 			secondKill:null
 		},
 		created() {
-			// axios.get("/queryNewAndHot").then(res=>{
-			// 	this.news = res.data.news;
-			// 	this.hots = res.data.hots;
-			// });
-			axios.get("/damai-other/product/queryNewAndHot").then(res=>{
+			axios.get("/queryNewAndHot").then(res=>{
 				this.news = res.data.news;
 				this.hots = res.data.hots;
 			});
+			// axios.get("/product/queryNewAndHot").then(res=>{
+			// 	this.news = res.data.news;
+			// 	this.hots = res.data.hots;
+			// });
 			axios.get("/damai-user/querySKProduct").then(res=>{
 				this.secondKill = res.data;
 			})
